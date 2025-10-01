@@ -1,0 +1,87 @@
+@import "tailwindcss"; 
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Enable smooth scrolling */
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+/* *{
+  .fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+  }
+
+} */
+.transt {
+  background-color: red;
+  animation-name: anime;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+  0% {
+    background-color: red;
+  }
+  33% {
+    background-color: green;
+  }
+  66% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+.career{
+  animation: career 3s infinite ease-in-out;
+}
+@keyframes career {
+  0% {
+    background-color: #3ddc3d; 
+  }
+  33% {
+    background-color: #5ce65c; 
+  }
+  66% {
+    background-color: #2db82d; 
+  }
+  100% {
+    background-color: #008000; 
+  }
+}
+.navbar,.bio {
+  animation-name: navAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navAnime {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.33;
+  }
+  66% {
+    opacity: 0.66;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

@@ -8,7 +8,7 @@ import Projectss from './components/Projectss'
 import Skill from './components/Skill'
 import Career from './components/career'
 import Footer from './components/footer'
-import Reveal from './components/reveal'
+import Reveal from "./components/Reveal"
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)

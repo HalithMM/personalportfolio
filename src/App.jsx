@@ -8,7 +8,7 @@ import Projectss from './components/Projectss'
 import Skill from './components/Skill'
 import Career from './components/career'
 import Footer from './components/footer'
-import Reveal from "./components/Reveal"
+import Reveals from './components/Reveals'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -24,13 +24,13 @@ function App() {
       ) : (
         <>
           <Header/>
-          <Reveal><Landing/></Reveal>
-          <Reveal><Bio/></Reveal>
-          <Reveal><About/></Reveal>
-          <Reveal><Skill/></Reveal>
-          <Reveal><Career/></Reveal>
+         <Reveals><Landing/></Reveals>
+          <Reveals><Bio/></Reveals>
+          <Reveals><About/></Reveals>
+          <Reveals><Skill/></Reveals>
+          <Reveals><Career/></Reveals>
           <Projectss/> 
-          <Reveal><Footer/></Reveal>
+          <Reveals><Footer/></Reveals>
         </>
       )}
     </div>

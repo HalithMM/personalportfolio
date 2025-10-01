@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const Reveal = ({ children, delay = 0.2, yOffset = 50 }) => {
+const Reveals = ({ children, delay = 0.2, yOffset = 50 }) => {
+
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
 
   return (
@@ -16,4 +17,4 @@ const Reveal = ({ children, delay = 0.2, yOffset = 50 }) => {
   );
 };
 
-export default Reveal;
+export default Reveals
